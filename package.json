@@ -1,6 +1,31 @@
 {
   "name": "autobot-wa-landing",
   "version": "1.0.0",
+  "description": "A professional, production-ready landing page for AutoBot WA - a WhatsApp automation SaaS platform with light/dark theme support",
+  "author": "Vaibhav Waghalkar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vaibhav-Waghalkar/Autobot-WA-Landing-Page.git"
+  },
+  "homepage": "https://github.com/Vaibhav-Waghalkar/Autobot-WA-Landing-Page#readme",
+  "bugs": {
+    "url": "https://github.com/Vaibhav-Waghalkar/Autobot-WA-Landing-Page/issues"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "landing-page",
+    "whatsapp",
+    "automation",
+    "saas",
+    "dark-theme",
+    "light-theme",
+    "responsive",
+    "vercel-v0"
+  ],
   "private": true,
   "scripts": {
     "dev": "next dev",
