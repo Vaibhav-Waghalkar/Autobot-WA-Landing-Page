@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme colors */
+    --background: #ffffff;
+    --background-secondary: #f9fafb;
+    --card-background: #ffffff;
+    --border: #e5e7eb;
+    --text-primary: #0a0a0a;
+    --text-secondary: #6b7280;
+    --accent: #10b981;
+    --accent-hover: #059669;
+    --pattern-opacity: 0.03;
+  }
+
+  .dark {
+    /* Dark theme - TRUE BLACK, not blue */
+    --background: #000000;
+    --background-secondary: #0a0a0a;
+    --card-background: #111111;
+    --border: #1f1f1f;
+    --text-primary: #ffffff;
+    --text-secondary: #a3a3a3;
+    --accent: #10b981;
+    --accent-hover: #059669;
+    --pattern-opacity: 0.05;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+    background-color: var(--background);
+    color: var(--text-primary);
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(16, 185, 129, var(--pattern-opacity)) 1px, transparent 0);
+    background-size: 40px 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background-color: var(--card-background);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--border);
+  }
+
+  .glass-light {
+    @apply bg-white/80 backdrop-blur-lg border border-gray-200;
+  }
+
+  .dark .glass {
+    background-color: rgba(17, 17, 17, 0.8);
+    border-color: var(--border);
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent;
+  }
+}
+
